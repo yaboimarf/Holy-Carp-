@@ -6,9 +6,6 @@ public class PlayerMovement2 : MonoBehaviour
     public Vector3 moveDir;
     public float moveSpeed;
     public Rigidbody rb;
-    public float maxDampening;
-    public float minDampening;
-    public float gravity;
 
     [Header("Cam movement")]
     public Vector3 bodyRotate;
@@ -19,11 +16,6 @@ public class PlayerMovement2 : MonoBehaviour
     public float maxClamp;
     // internal camera pitch tracked in degrees (-180..180)
     private float cameraPitch;
-
-
-    [Header("Grounded")]
-    public bool isGrounded;
-    public float groundCheckDistance;
 
 
     void Start()
@@ -43,15 +35,6 @@ public class PlayerMovement2 : MonoBehaviour
     void Update()
     {
         BodyMovement();
-        //IsGrounded();
-        //if(isGrounded)
-        //{
-        //    rb.linearDamping = maxDampening;
-        //}
-        //else
-        //{
-        //    rb.linearDamping = minDampening;
-        //}
     }
 
     private void BodyMovement()
@@ -59,7 +42,7 @@ public class PlayerMovement2 : MonoBehaviour
         // body movement
         moveDir.x = Input.GetAxis("Horizontal");
         moveDir.z = Input.GetAxis("Vertical");
-        moveDir.y = gravity; // ensure no vertical movement from input
+        //moveDir.y = gravity; // ensure no vertical movement from input
         rb.AddRelativeForce(moveSpeed * Time.deltaTime * moveDir, ForceMode.Impulse);
 
         // mouse input
@@ -82,18 +65,6 @@ public class PlayerMovement2 : MonoBehaviour
 
             // apply only pitch locally to avoid messing with player's yaw
             cam.localEulerAngles = new Vector3(cameraPitch, 0f, 0f);
-        }
-    }
-    private void IsGrounded()
-    {
-        // Simple ground check using a raycast downwards
-        if (Physics.Raycast(transform.position, Vector3.down, groundCheckDistance))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
         }
     }
 }
