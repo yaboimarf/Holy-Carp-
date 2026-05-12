@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8007961479503804873}
+  - component: {fileID: 7784974750348113119}
   m_Layer: 0
   m_Name: Lake_Pike
   m_TagString: Untagged
@@ -29,10 +30,32 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3786666779396008487}
+  - {fileID: 4452029119861842510}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3676705460722240972
+--- !u!95 &7784974750348113119
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250191183171704853}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: c5b1a033e10e7ae45aaa2f0b7bc4ed1d, type: 3}
+  m_Controller: {fileID: 9100000, guid: f0ae29b615003c4409fa45157634f678, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &4198042704433776037
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -58,15 +81,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -80,10 +103,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 4fbd4033ab69f5448b4e951ead0178d9, type: 2}
     - target: {fileID: 919132149155446097, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
       propertyPath: m_Name
       value: Pike
@@ -93,8 +112,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
---- !u!4 &3786666779396008487 stripped
+--- !u!4 &4452029119861842510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 29104f24bb7ff1f4eb5427da53990ef8, type: 3}
-  m_PrefabInstance: {fileID: 3676705460722240972}
+  m_PrefabInstance: {fileID: 4198042704433776037}
   m_PrefabAsset: {fileID: 0}
