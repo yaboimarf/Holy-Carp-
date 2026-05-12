@@ -302,5 +302,6 @@ MonoBehaviour:
   cam: {fileID: 8717997517061214534}
   minClamp: -89
   maxClamp: 89
-  bait: {fileID: 8850193485347816999, guid: fb714423d7f652f439ac4c5bfe8f422f, type: 3}
+  baitPrefab: {fileID: 8850193485347816999, guid: fb714423d7f652f439ac4c5bfe8f422f, type: 3}
+  bait: {fileID: 0}
   baitThrown: 0
