@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 7478459304113890045}
   - component: {fileID: 2040938785564668379}
   - component: {fileID: 7557836717665831301}
-  - component: {fileID: 4041797878398533556}
   - component: {fileID: 143907428323279366}
   - component: {fileID: 3126711595706939366}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Bobber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8850193485347816999}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.14999977, z: 0, w: 0.988686}
+  m_LocalRotation: {x: 0, y: 0.12265632, z: 0, w: 0.9924492}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
@@ -114,27 +113,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &4041797878398533556
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850193485347816999}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &143907428323279366
 Rigidbody:

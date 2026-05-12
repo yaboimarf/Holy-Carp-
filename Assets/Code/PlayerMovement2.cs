@@ -18,6 +18,7 @@ public class PlayerMovement2 : MonoBehaviour
     private float cameraPitch;
 
     [Header("Bait Stuff")]
+    public GameObject baitPrefab;
     public GameObject bait;
     public bool baitThrown;
 
@@ -33,31 +34,35 @@ public class PlayerMovement2 : MonoBehaviour
             {
                 cameraPitch -= 360f;
             }
-        }
+        }        
     }
 
     // Update is called once per frame
     void Update()
     {
         BodyMovement();
-        if(baitThrown != true)
+
+        // gets bait object in scene, if it exists. If not, looks for it by tag. This allows the player to throw the bait, then pick it up again and throw it again.
+        if (bait == null)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                bait.transform.forward = transform.forward; // align bait's forward with player's forward
-                Instantiate(bait, cam.position + cam.forward, cam.rotation); // spawn bait slightly in front of player
-                baitThrown = true;
-            }
+            //baitThrown = false;
+            bait = GameObject.FindWithTag("Bobber");
         }
-        if(Input.GetMouseButtonDown(1))
+
+        if (Input.GetMouseButtonDown(0))
         {
-            if (baitThrown != true)
+            if (baitThrown == false)
             {
-                bait.transform.forward = transform.forward; // align bait's forward with player's forward
-                Instantiate(bait, cam.position + cam.forward, cam.rotation); // spawn bait slightly in front of player
+                baitPrefab.transform.forward = transform.forward; // align bait's forward with player's forward
+                Instantiate(baitPrefab, cam.position + cam.forward, cam.rotation); // spawn bait slightly in front of player
                 baitThrown = true;
             }
-            Destroy(bait);
+            else
+            {
+                Destroy(bait);
+                baitThrown = false;
+                bait = null;
+            }
         }
     }
 

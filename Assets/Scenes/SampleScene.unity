@@ -1087,6 +1087,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2581569824281708796, guid: 42ea7da46c7a7bd448fc4e6084a9fbd2, type: 3}
+      propertyPath: bait
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2581569824281708796, guid: 42ea7da46c7a7bd448fc4e6084a9fbd2, type: 3}
+      propertyPath: baitPrefab
+      value: 
+      objectReference: {fileID: 8850193485347816999, guid: fb714423d7f652f439ac4c5bfe8f422f, type: 3}
     - target: {fileID: 6987867615093174957, guid: 42ea7da46c7a7bd448fc4e6084a9fbd2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.71428
