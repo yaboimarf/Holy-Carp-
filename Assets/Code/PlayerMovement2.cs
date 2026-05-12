@@ -17,6 +17,11 @@ public class PlayerMovement2 : MonoBehaviour
     // internal camera pitch tracked in degrees (-180..180)
     private float cameraPitch;
 
+    [Header("Bait Stuff")]
+    public GameObject bait;
+    public bool baitThrown;
+
+
 
     void Start()
     {
@@ -35,6 +40,25 @@ public class PlayerMovement2 : MonoBehaviour
     void Update()
     {
         BodyMovement();
+        if(baitThrown != true)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                bait.transform.forward = transform.forward; // align bait's forward with player's forward
+                Instantiate(bait, cam.position + cam.forward, cam.rotation); // spawn bait slightly in front of player
+                baitThrown = true;
+            }
+        }
+        if(Input.GetMouseButtonDown(1))
+        {
+            if (baitThrown != true)
+            {
+                bait.transform.forward = transform.forward; // align bait's forward with player's forward
+                Instantiate(bait, cam.position + cam.forward, cam.rotation); // spawn bait slightly in front of player
+                baitThrown = true;
+            }
+            Destroy(bait);
+        }
     }
 
     private void BodyMovement()
