@@ -28,6 +28,7 @@ public class FishingArea : MonoBehaviour
 
     private GameObject currentBobber;
     private Coroutine fishingCoroutine;
+    public PlayerMovement2 playerMovement2;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -113,6 +114,7 @@ public class FishingArea : MonoBehaviour
         {
             Destroy(currentBobber);
             currentBobber = null;
+            playerMovement2.baitThrown = false;
         }
 
         Debug.Log("Bobber verwijderd");
