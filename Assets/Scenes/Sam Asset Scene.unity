@@ -509,6 +509,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6678589078378fc4ea5c6385a19c3367, type: 3}
+--- !u!1001 &1497636954
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5089524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5089524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5089524
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.734
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.589
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94584596
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.022968723
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.31658936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.067964174
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 4.961
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -36.727
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037394566367044831, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 6.572
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362267025099385281, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
+      propertyPath: m_Name
+      value: Lake_Carp (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32c3dd7948e2d674397b78658e834046, type: 3}
 --- !u!1001 &1545521309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,6 +863,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fab77683e1d7c0548b8af68235e02684, type: 3}
+--- !u!1001 &6679139971325529396
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075026391334471170, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7189813673206845629, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
+      propertyPath: m_Name
+      value: Lake_BeardFish
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d280c4d7b91ce4428d21e618fb8dfe8, type: 3}
 --- !u!1001 &6769154101770438027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1086,6 +1212,7 @@ SceneRoots:
   - {fileID: 27224769}
   - {fileID: 894865037}
   - {fileID: 7625765992086817024}
+  - {fileID: 6679139971325529396}
   - {fileID: 9073687526933112407}
   - {fileID: 7923516740127006660}
   - {fileID: 6539040670979131715}
@@ -1098,3 +1225,4 @@ SceneRoots:
   - {fileID: 373609429}
   - {fileID: 1242010346}
   - {fileID: 6769154101770438027}
+  - {fileID: 1497636954}
