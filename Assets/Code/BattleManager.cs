@@ -6,6 +6,7 @@ public class BattleManager : MonoBehaviour
     public bool playerTurnDone;
     public bool enemyTurnDone;
     public GameObject battleMenu;
+    public FishingArea FishingArea;
     private void Update()
     {
         if (isBattleActive)

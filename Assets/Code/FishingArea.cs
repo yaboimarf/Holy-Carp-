@@ -29,6 +29,7 @@ public class FishingArea : MonoBehaviour
     private GameObject currentBobber;
     private Coroutine fishingCoroutine;
     public PlayerMovement2 playerMovement2;
+    public BattleManager battleManager;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -75,13 +76,26 @@ public class FishingArea : MonoBehaviour
 
         if (currentBobber != null)
         {
-            CatchFish();
+            battleManager.isBattleActive = true;
         }
 
         fishingCoroutine = null;
     }
 
-    void CatchFish()
+    public void Reel()
+    {
+        int kans = Random.Range(0, 2);
+
+        if (kans == 0)
+        {
+            CatchFish();
+        }
+        else
+        {
+            battleManager.PlayerTurnCompleted(); 
+        }
+    }
+    public void CatchFish()
     {
         float random = Random.Range(0f, 100f);
         float current = 0f;
@@ -100,6 +114,8 @@ public class FishingArea : MonoBehaviour
 
                 // HIER: bobber verwijderen
                 RemoveBobber();
+
+                battleManager.EndBattle();             
 
                 return;
             }

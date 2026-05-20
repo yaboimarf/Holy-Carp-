@@ -22,6 +22,8 @@ public class PlayerMovement2 : MonoBehaviour
     public GameObject bait;
     public bool baitThrown;
 
+    public BattleManager battleManager;
+
 
 
     void Start()
@@ -51,6 +53,9 @@ public class PlayerMovement2 : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (battleManager.isBattleActive)
+                return;
+
             if (baitThrown == false)
             {
                 baitPrefab.transform.forward = transform.forward; // align bait's forward with player's forward
