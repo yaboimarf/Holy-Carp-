@@ -1,4 +1,6 @@
-using UnityEngine;
+ using UnityEngine;
+using UnityEngine.UI; 
+
 
 public class BattleManager : MonoBehaviour
 {
@@ -6,7 +8,11 @@ public class BattleManager : MonoBehaviour
     public bool playerTurnDone;
     public bool enemyTurnDone;
     public GameObject battleMenu;
+    public GameObject HealthBarCanvas;
     public FishingArea FishingArea;
+    public EnemyAI EnemyAI;
+    public PlayerHealth playerHealth;
+
     private void Update()
     {
         if (isBattleActive)
@@ -15,9 +21,11 @@ public class BattleManager : MonoBehaviour
         }
     }
 
+
     public void StartBattle()
     {
         battleMenu.SetActive(true);
+        HealthBarCanvas.SetActive(true);
         Debug.Log("player turn");
         if (playerTurnDone)
         {
@@ -31,9 +39,12 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
+
     public void PlayerTurnCompleted()
     {
         playerTurnDone = true;
+
+        EnemyAI.EnemyTurn(playerHealth);
     }
     public void EnemyTurnCompleted()
     {
@@ -48,5 +59,9 @@ public class BattleManager : MonoBehaviour
         playerTurnDone = false;
         enemyTurnDone = false;
         battleMenu.SetActive(false);
+        HealthBarCanvas.SetActive(false);
+        playerHealth.ResetHP();
+        EnemyAI.ResetHP();
     }
 }
+

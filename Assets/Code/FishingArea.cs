@@ -6,6 +6,7 @@ using UnityEngine;
 public class FishEntry
 {
     public Fish fishPrefab;
+    
 
     [Range(0f, 100f)]
     public float catchChance = 25f;
@@ -30,6 +31,8 @@ public class FishingArea : MonoBehaviour
     private Coroutine fishingCoroutine;
     public PlayerMovement2 playerMovement2;
     public BattleManager battleManager;
+    public PlayerHealth playerHealth;
+    public EnemyAI enemyAI;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -76,6 +79,8 @@ public class FishingArea : MonoBehaviour
 
         if (currentBobber != null)
         {
+            playerHealth.ResetHP();
+            enemyAI.ResetHP();
             battleManager.isBattleActive = true;
         }
 
