@@ -83,6 +83,7 @@ public class FishingArea : MonoBehaviour
             playerHealth.ResetHP();
             enemyAI.ResetHP();
             battleManager.isBattleActive = true;
+            playerMovement2.canControl = false;
         }
 
         fishingCoroutine = null;
@@ -123,13 +124,12 @@ public class FishingArea : MonoBehaviour
                 // HIER: bobber verwijderen
                 RemoveBobber();
 
-                battleManager.EndBattle();             
+                battleManager.EndBattle();
+                playerMovement2.canControl = true;
 
                 return;
             }
         }
-
-        Debug.Log("Geen vis gevangen");
     }
 
     void RemoveBobber()

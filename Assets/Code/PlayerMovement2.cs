@@ -16,6 +16,7 @@ public class PlayerMovement2 : MonoBehaviour
     public float maxClamp;
     // internal camera pitch tracked in degrees (-180..180)
     private float cameraPitch;
+    public bool canControl = true;
 
     [Header("Bait Stuff")]
     public GameObject baitPrefab;
@@ -48,6 +49,9 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!canControl)
+            return;
+
         BodyMovement();
 
         // gets bait object in scene, if it exists. If not, looks for it by tag. This allows the player to throw the bait, then pick it up again and throw it again.
