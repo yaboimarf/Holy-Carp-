@@ -22,6 +22,11 @@ public class PlayerMovement2 : MonoBehaviour
     public GameObject bait;
     public bool baitThrown;
 
+    [Header("Inventory Stuff")]
+    public GameObject inventoryPanel;
+    bool isOpen = false;
+
+    public InventoryUI inventoryUI;
     public BattleManager battleManager;
 
 
@@ -36,7 +41,8 @@ public class PlayerMovement2 : MonoBehaviour
             {
                 cameraPitch -= 360f;
             }
-        }        
+        }
+        inventoryPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -69,8 +75,19 @@ public class PlayerMovement2 : MonoBehaviour
                 bait = null;
             }
         }
-    }
+       
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            isOpen = !isOpen;
 
+            inventoryPanel.SetActive(isOpen);
+
+            if (isOpen)
+            {
+                inventoryUI.UpdateUI();
+            }
+        }
+    }
     private void BodyMovement()
     {
         // body movement

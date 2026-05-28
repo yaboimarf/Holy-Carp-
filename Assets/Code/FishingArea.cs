@@ -33,6 +33,7 @@ public class FishingArea : MonoBehaviour
     public BattleManager battleManager;
     public PlayerHealth playerHealth;
     public EnemyAI enemyAI;
+    public InventoryManager InventoryManager;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -114,6 +115,8 @@ public class FishingArea : MonoBehaviour
             if (random <= current)
             {
                 Debug.Log("Vis gevangen: " + entry.fishPrefab.fishName);
+
+                InventoryManager.AddFish(entry.fishPrefab);
 
                 SpawnFish(entry.fishPrefab);
 
