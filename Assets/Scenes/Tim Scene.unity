@@ -1111,7 +1111,7 @@ MonoBehaviour:
   playerHealth: {fileID: 1674498411}
   enemyAI: {fileID: 608180561}
   InventoryManager: {fileID: 985383804}
-  AttackButton: {fileID: 0}
+  AttackButton: {fileID: 1740900824}
 --- !u!64 &608180560
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1513,7 +1513,7 @@ MonoBehaviour:
   playerHealth: {fileID: 1674498411}
   enemyAI: {fileID: 849959049}
   InventoryManager: {fileID: 985383804}
-  AttackButton: {fileID: 0}
+  AttackButton: {fileID: 1740900824}
 --- !u!64 &849959051
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2712,19 +2712,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1740900827}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1674498411}
-        m_TargetAssemblyTypeName: PlayerHealth, Assembly-CSharp
-        m_MethodName: Attack
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 608180561}
-          m_ObjectArgumentAssemblyTypeName: EnemyAI, Assembly-CSharp
-          m_IntArgument: 25
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1740900827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3264,7 +3252,7 @@ MonoBehaviour:
   playerHealth: {fileID: 1674498411}
   enemyAI: {fileID: 1851345808}
   InventoryManager: {fileID: 985383804}
-  AttackButton: {fileID: 0}
+  AttackButton: {fileID: 1740900824}
 --- !u!64 &1851345810
 MeshCollider:
   m_ObjectHideFlags: 0
