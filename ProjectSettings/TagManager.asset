@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Bobber
   - lure
+  - fish
+  - CavePool
+  - LakePool
+  - OceanPool
   layers:
   - Default
   - TransparentFX
