@@ -30,7 +30,9 @@ public class PlayerMovement2 : MonoBehaviour
     public InventoryUI inventoryUI;
     public BattleManager battleManager;
 
-
+    [Header("Other")]
+    public GameObject menu;
+    public bool isMenuOpen = false;
 
     void Start()
     {
@@ -49,6 +51,7 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Menu();
         if (!canControl)
             return;
 
@@ -123,6 +126,24 @@ public class PlayerMovement2 : MonoBehaviour
 
             // apply only pitch locally to avoid messing with player's yaw
             cam.localEulerAngles = new Vector3(cameraPitch, 0f, 0f);
+        }
+    }
+    private void Menu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isMenuOpen == false)
+            {
+                menu.SetActive(true);
+                canControl = false; // disable controls when menu is active
+                isMenuOpen = true;
+            }
+            else
+            {
+                menu.SetActive(false);
+                canControl = true; // re-enable controls when menu is closed
+                isMenuOpen = false;
+            }
         }
     }
 }
