@@ -26,9 +26,6 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHP -= damage;
 
-        if (currentHP < 0)
-            currentHP = 0;
-
         healthBar.SetHP(currentHP);
 
         if (currentHP <= 0)

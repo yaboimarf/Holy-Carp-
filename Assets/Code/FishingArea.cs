@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class FishEntry
@@ -34,7 +35,8 @@ public class FishingArea : MonoBehaviour
     public PlayerHealth playerHealth;
     public EnemyAI enemyAI;
     public InventoryManager InventoryManager;
-
+    public GameObject AttackButton;
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bobber"))
@@ -82,6 +84,10 @@ public class FishingArea : MonoBehaviour
         {
             playerHealth.ResetHP();
             enemyAI.ResetHP();
+            battleManager.FishingArea = this.gameObject.GetComponent<FishingArea>();
+            battleManager.EnemyAI = this.gameObject.GetComponent<EnemyAI>();
+            AttackButton.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+            AttackButton.gameObject.GetComponent<Button>().onClick.AddListener(ButtonFuntion);
             battleManager.isBattleActive = true;
             playerMovement2.canControl = false;
         }
@@ -170,4 +176,10 @@ public class FishingArea : MonoBehaviour
 
         Destroy(fish);
     }
+
+    public void ButtonFuntion() 
+    {
+        playerHealth.Attack(enemyAI);
+    }
+   
 }

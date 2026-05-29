@@ -78,9 +78,6 @@ public class EnemyAI : MonoBehaviour
     {
         currentHP -= damage;
 
-        if (currentHP < 0)
-            currentHP = 0;
-
         healthBar.SetHP(currentHP);
 
 
