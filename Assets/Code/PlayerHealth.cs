@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -38,5 +39,23 @@ public class PlayerHealth : MonoBehaviour
     {
         enemy.TakeDamage(attackDamage);
         battleManager.PlayerTurnCompleted();
+    }
+
+    public void TryCatchFish(EnemyAI enemy)
+    {
+        float hpPercentage = (float)enemy.currentHP / enemy.maxHP;
+
+        float catchChance = (1f - hpPercentage) * 75f;
+
+        float roll = Random.Range(0f, 100f);
+
+        if (roll <= catchChance)
+        {
+            enemy.fishingArea.CatchFish();
+        }
+        else
+        {
+            battleManager.PlayerTurnCompleted();
+        }
     }
 }

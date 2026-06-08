@@ -39,6 +39,7 @@ public class FishingArea : MonoBehaviour
     public EnemyAI enemyAI;
     public InventoryManager InventoryManager;
     public GameObject AttackButton;
+    public GameObject CatchButton;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -95,7 +96,10 @@ public class FishingArea : MonoBehaviour
             battleManager.EnemyAI = this.gameObject.GetComponent<EnemyAI>();
 
             AttackButton.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
-            AttackButton.gameObject.GetComponent<Button>().onClick.AddListener(ButtonFuntion);
+            AttackButton.gameObject.GetComponent<Button>().onClick.AddListener(AttackButtonFuntion);
+
+            CatchButton.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+            CatchButton.gameObject.GetComponent<Button>().onClick.AddListener(CatchButtonFuntion);
 
             battleManager.isBattleActive = true;
             playerMovement2.canControl = false;
@@ -123,8 +127,6 @@ public class FishingArea : MonoBehaviour
 
         return null;
     }
-
-
 
     public void Reel()
     {
@@ -197,9 +199,12 @@ public class FishingArea : MonoBehaviour
         Destroy(fish);
     }
 
-    public void ButtonFuntion() 
+    public void AttackButtonFuntion() 
     {
         playerHealth.Attack(enemyAI);
     }
-   
+    public void CatchButtonFuntion()
+    {
+        playerHealth.TryCatchFish(enemyAI);
+    }
 }
