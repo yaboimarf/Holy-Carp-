@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour
 {
 
-    public int maxHP = 100;
+    public int maxHP;
     public int currentHP;
     
     public int attackDamage = 25;
