@@ -349,6 +349,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8953183742461303428, guid: 42ea7da46c7a7bd448fc4e6084a9fbd2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1674498411}
+    - targetCorrespondingSourceObject: {fileID: 8953183742461303428, guid: 42ea7da46c7a7bd448fc4e6084a9fbd2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1674498417}
   m_SourcePrefab: {fileID: 100100000, guid: 42ea7da46c7a7bd448fc4e6084a9fbd2, type: 3}
 --- !u!1 &272787808
 GameObject:
@@ -1879,6 +1882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   inventory: []
+  codex: {fileID: 1674498417}
 --- !u!4 &985383805
 Transform:
   m_ObjectHideFlags: 0
@@ -2760,6 +2764,27 @@ MonoBehaviour:
   attackDamage: 25
   healthBar: {fileID: 1910146239}
   battleManager: {fileID: 1757618186}
+--- !u!114 &1674498417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674498405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e47e21533b702840ba016cdb880d839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Codex
+  flounder: 0
+  remora: 0
+  tuna: 0
+  beardfish: 0
+  catfish: 0
+  olm: 0
+  carp: 0
+  goldfish: 0
+  pike: 0
 --- !u!1 &1740900824
 GameObject:
   m_ObjectHideFlags: 0
