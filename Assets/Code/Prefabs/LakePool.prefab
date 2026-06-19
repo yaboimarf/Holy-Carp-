@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8850193485347816999
+--- !u!1 &7413713918225634450
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3990037153061088270}
-  - component: {fileID: 7478459304113890045}
-  - component: {fileID: 2040938785564668379}
-  - component: {fileID: 7557836717665831301}
-  - component: {fileID: 143907428323279366}
-  - component: {fileID: 3126711595706939366}
+  - component: {fileID: 4465622700469355929}
+  - component: {fileID: 6493042392463226290}
+  - component: {fileID: 8646790045966048144}
+  - component: {fileID: 8427097754812794059}
+  - component: {fileID: 7557870695195810253}
+  - component: {fileID: 8206261799622987979}
   m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Bobber
+  m_Name: LakePool
+  m_TagString: LakePool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3990037153061088270
+--- !u!4 &4465622700469355929
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850193485347816999}
+  m_GameObject: {fileID: 7413713918225634450}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9947357, z: 0, w: -0.10247412}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15, y: -1.05, z: -1.89407}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7478459304113890045
+--- !u!33 &6493042392463226290
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850193485347816999}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &2040938785564668379
+  m_GameObject: {fileID: 7413713918225634450}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8646790045966048144
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850193485347816999}
+  m_GameObject: {fileID: 7413713918225634450}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -69,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 8f8f078d252016f4384a03736b5366ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93,13 +93,13 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7557836717665831301
-BoxCollider:
+--- !u!64 &8427097754812794059
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850193485347816999}
+  m_GameObject: {fileID: 7413713918225634450}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -108,51 +108,62 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &143907428323279366
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850193485347816999}
   serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!114 &3126711595706939366
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7557870695195810253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8850193485347816999}
+  m_GameObject: {fileID: 7413713918225634450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a275a00d73d3d346921c26de3c5559f, type: 3}
+  m_Script: {fileID: 11500000, guid: a71502e22ec26784d9eb45b33c2fcd99, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Casting
-  rb: {fileID: 143907428323279366}
-  bait: {fileID: 8850193485347816999}
-  throwForce: 10
+  m_EditorClassIdentifier: Assembly-CSharp::FishingArea
+  waitTime: 5
+  fishList:
+  - fishPrefab: {fileID: 7593636604423695899, guid: c4c89eb2b4d4ba64b9f2b0132fa2e291, type: 3}
+    catchChance: 33
+    HP: 100
+  - fishPrefab: {fileID: -6172765839617545978, guid: f4671b2adf987444ea41ed60559d957b, type: 3}
+    catchChance: 33
+    HP: 100
+  - fishPrefab: {fileID: -3882890478070048919, guid: 0fd8c48e11bcef9439304234976a2531, type: 3}
+    catchChance: 33
+    HP: 50
+  fishSpawnPoint: {fileID: 4465622700469355929}
+  floatSpeed: 2
+  destroyAfterSeconds: 3
+  playerMovement2: {fileID: 0}
+  battleManager: {fileID: 0}
+  playerHealth: {fileID: 0}
+  enemyAI: {fileID: 8206261799622987979}
+  InventoryManager: {fileID: 0}
+  AttackButton: {fileID: 0}
+  CatchButton: {fileID: 0}
+--- !u!114 &8206261799622987979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7413713918225634450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f05c053bac982046b10eacec079afd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  maxHP: 100
+  currentHP: 0
+  attackDamage: 25
+  healthBar: {fileID: 0}
+  fishingArea: {fileID: 7557870695195810253}
+  battleManager: {fileID: 0}
+  player: {fileID: 0}
