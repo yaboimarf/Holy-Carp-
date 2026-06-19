@@ -33,6 +33,8 @@ public class PlayerMovement2 : MonoBehaviour
     [Header("Other")]
     public GameObject menu;
     public bool isMenuOpen = false;
+    public GameObject codexPanel;
+    public bool isCodexOpen = false;
 
     void Start()
     {
@@ -52,6 +54,7 @@ public class PlayerMovement2 : MonoBehaviour
     void Update()
     {
         Menu();
+        Codex();
         if (!canControl)
             return;
 
@@ -144,6 +147,25 @@ public class PlayerMovement2 : MonoBehaviour
                 canControl = true; // re-enable controls when menu is closed
                 isMenuOpen = false;
             }
+        }
+    }
+    private void Codex()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (isCodexOpen == false)
+            {
+                codexPanel.SetActive(true);
+                canControl = false; // disable controls when codex is active
+                isCodexOpen = true;
+            }
+            else
+            {
+                codexPanel.SetActive(false);
+                canControl = true; // re-enable controls when codex is closed
+                isCodexOpen = false;
+            }
+
         }
     }
 }
