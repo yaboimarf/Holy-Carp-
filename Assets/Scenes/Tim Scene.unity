@@ -3452,6 +3452,7 @@ MonoBehaviour:
   enemyTurnDone: 0
   battleMenu: {fileID: 1162145904}
   HealthBarCanvas: {fileID: 272787808}
+  InventoryCanvas: {fileID: 841561030}
   FishingArea: {fileID: 849959050}
   EnemyAI: {fileID: 849959049}
   playerHealth: {fileID: 1674498411}
