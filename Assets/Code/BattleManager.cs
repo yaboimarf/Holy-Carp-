@@ -9,6 +9,7 @@ public class BattleManager : MonoBehaviour
 
     public GameObject battleMenu;
     public GameObject HealthBarCanvas;
+    public GameObject InventoryCanvas;
 
     public FishingArea FishingArea;
     public EnemyAI EnemyAI;
@@ -29,6 +30,7 @@ public class BattleManager : MonoBehaviour
 
         battleMenu.SetActive(true);
         HealthBarCanvas.SetActive(true);
+        InventoryCanvas.SetActive(false);
 
         Debug.Log("player turn");
 
