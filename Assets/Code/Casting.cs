@@ -11,22 +11,12 @@ public class Casting : MonoBehaviour
 
     private void Start()
     {
+        up.x = -90;
         if (rb == null)
         {
             rb = GetComponent<Rigidbody>();
         }
         rb.AddRelativeForce(Vector3.forward * throwForce, ForceMode.Impulse);
-    }
-    public void Update()
-    {
-        if (up.x > -90)
-        {
-            up.x -= turnSpeed;
-        }
-        else
-        {
-            up.x += turnSpeed;
-        }
-        transform.localRotation = Quaternion.Euler(up * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(up);
     }
 }

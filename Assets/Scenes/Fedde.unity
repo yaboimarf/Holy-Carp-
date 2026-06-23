@@ -2053,6 +2053,10 @@ PrefabInstance:
       value: -89
       objectReference: {fileID: 0}
     - target: {fileID: 8307294415299090526, guid: 7913798323364c344bdd16eaf5b0e8d4, type: 3}
+      propertyPath: baitPrefab
+      value: 
+      objectReference: {fileID: 1933222299297528656, guid: df8609e5e9fddc841af5d307ffa0ab6a, type: 3}
+    - target: {fileID: 8307294415299090526, guid: 7913798323364c344bdd16eaf5b0e8d4, type: 3}
       propertyPath: baitThrown
       value: 0
       objectReference: {fileID: 0}

@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a823e18ba07a5ed4ba9d79461014b87a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.9922516
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a823e18ba07a5ed4ba9d79461014b87a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a823e18ba07a5ed4ba9d79461014b87a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.12424518
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a823e18ba07a5ed4ba9d79461014b87a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -94,6 +94,9 @@ MonoBehaviour:
   rb: {fileID: 4843371975568857448}
   bait: {fileID: 1933222299297528656}
   throwForce: 10
+  up: {x: 0, y: 0, z: 0}
+  turnUp: 0
+  turnSpeed: 5
 --- !u!65 &6294403097686432739
 BoxCollider:
   m_ObjectHideFlags: 0
