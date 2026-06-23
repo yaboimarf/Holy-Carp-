@@ -136,6 +136,11 @@ public class PlayerMovement2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            if (inventoryPanel == isOpen)
+            {
+                return;
+            }
+            
             if (isMenuOpen == false)
             {
                 menu.SetActive(true);
