@@ -35,7 +35,8 @@ public class PlayerMovement2 : MonoBehaviour
     public bool isMenuOpen = false;
     public GameObject codexPanel;
     public bool isCodexOpen = false;
-
+    public GameObject ShopCanvas;
+    public bool isShopCanvasOpen = false;
     void Start()
     {
         // Initialize cameraPitch from current local rotation and normalize to -180..180 range
@@ -48,6 +49,9 @@ public class PlayerMovement2 : MonoBehaviour
             }
         }
         inventoryPanel.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -72,6 +76,11 @@ public class PlayerMovement2 : MonoBehaviour
             if (battleManager.isBattleActive)
                 return;
 
+            if (ShopCanvas == isShopCanvasOpen)
+            {
+                return;
+            }
+
             if (baitThrown == false)
             {
                 baitPrefab.transform.forward = transform.forward; // align bait's forward with player's forward
@@ -88,6 +97,11 @@ public class PlayerMovement2 : MonoBehaviour
        
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            if (ShopCanvas == isShopCanvasOpen)
+            {
+                return;
+            }
+
             inventoryPanel.SetActive(true);
             if (battleManager.isBattleActive)
                 return;
@@ -137,6 +151,11 @@ public class PlayerMovement2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (inventoryPanel == isOpen)
+            {
+                return;
+            }
+
+            if (ShopCanvas == isShopCanvasOpen)
             {
                 return;
             }

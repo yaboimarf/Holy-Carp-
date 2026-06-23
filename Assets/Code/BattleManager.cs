@@ -32,6 +32,9 @@ public class BattleManager : MonoBehaviour
         HealthBarCanvas.SetActive(true);
         InventoryCanvas.SetActive(false);
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         Debug.Log("player turn");
 
         if (playerTurnDone)

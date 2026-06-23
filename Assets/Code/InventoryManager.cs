@@ -9,21 +9,19 @@ public class InventoryManager : MonoBehaviour
         new List<InventoryItem>();
     public Codex codex;
 
-    public void AddFish(Fish fish)
+    public void AddFish(Fish fish, int sellPrice)
     {
         foreach (InventoryItem item in inventory)
         {
             if (item.fishName == fish.fishName)
             {
                 item.amount++;
-
                 return;
             }
         }
 
-        inventory.Add(
-            new InventoryItem(fish.fishName)
-        );
+        inventory.Add(new InventoryItem(fish.fishName, sellPrice));
+
         CheckAllFish();
     }
     private void CheckAllFish()

@@ -12,6 +12,7 @@ public class FishEntry
     [Range(0f, 100f)]
     public float catchChance = 25f;
     public float HP = 0f;
+    public int sellPrice;
 }
 
 public class FishingArea : MonoBehaviour
@@ -146,9 +147,7 @@ public class FishingArea : MonoBehaviour
         if (currentfish == null)
             return;
 
-        Debug.Log("Vis gevangen: " + currentfish.fishPrefab.fishName);
-
-        InventoryManager.AddFish(currentfish.fishPrefab);
+        InventoryManager.AddFish(currentfish.fishPrefab, currentfish.sellPrice);
 
         SpawnFish(currentfish.fishPrefab);
 
