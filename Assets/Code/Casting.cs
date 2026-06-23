@@ -24,6 +24,10 @@ public class Casting : MonoBehaviour
         {
             turnUp -= turnSpeed;
         }
+        else
+        {
+            turnUp += turnSpeed;
+        }
         transform.Rotate(up * Time.deltaTime);
     }
 }
