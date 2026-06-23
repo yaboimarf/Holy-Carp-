@@ -88,6 +88,7 @@ public class PlayerMovement2 : MonoBehaviour
        
         if (Input.GetKeyDown(KeyCode.Tab))
         {
+            inventoryPanel.SetActive(true);
             if (battleManager.isBattleActive)
                 return;
 
