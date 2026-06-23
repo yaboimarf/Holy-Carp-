@@ -835,6 +835,7 @@ RectTransform:
   - {fileID: 5645664384152455525}
   - {fileID: 2810495476197685747}
   - {fileID: 6992859459534526439}
+  - {fileID: 5336234626772889887}
   m_Father: {fileID: 1520788790501153439}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1445,8 +1446,6 @@ RectTransform:
   m_Children:
   - {fileID: 5298496379701733622}
   - {fileID: 1409218317669695513}
-  - {fileID: 1522132974066204472}
-  - {fileID: 5336234626772889887}
   m_Father: {fileID: 2442101996594456519}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2622,12 +2621,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7174312406263455435}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5421, y: 1.5421, z: 1.5421}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1520788790501153439}
+  m_Father: {fileID: 5298496379701733622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2764,6 +2763,7 @@ RectTransform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1522132974066204472}
   - {fileID: 7753606769857425038}
   - {fileID: 2517753572817431345}
   - {fileID: 2877416636540520478}
@@ -3089,12 +3089,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8299595920131921550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5421, y: 1.5421, z: 1.5421}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1520788790501153439}
+  m_Father: {fileID: 1409218317669695513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
