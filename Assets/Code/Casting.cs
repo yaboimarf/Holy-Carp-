@@ -19,14 +19,13 @@ public class Casting : MonoBehaviour
     }
     public void Update()
     {
-        up.x = turnUp;
-        if (turnUp > -90)
+        if (up.x > -90)
         {
-            turnUp -= turnSpeed;
+            up.x -= turnSpeed;
         }
         else
         {
-            turnUp += turnSpeed;
+            up.x += turnSpeed;
         }
         transform.Rotate(up * Time.deltaTime);
     }
