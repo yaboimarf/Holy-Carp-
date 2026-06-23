@@ -27,6 +27,6 @@ public class Casting : MonoBehaviour
         {
             up.x += turnSpeed;
         }
-        transform.Rotate(up * Time.deltaTime);
+        transform.localRotation = Quaternion.Euler(up * Time.deltaTime);
     }
 }
