@@ -361,7 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 58364278}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: FishSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1442,7 +1442,7 @@ MonoBehaviour:
     catchChance: 33
     HP: 50
     sellPrice: 25
-  fishSpawnPoint: {fileID: 254350980}
+  fishSpawnPoint: {fileID: 58364278}
   floatSpeed: 2
   destroyAfterSeconds: 3
   playerMovement2: {fileID: 1765059784}
@@ -1542,7 +1542,7 @@ Transform:
   m_GameObject: {fileID: 254350974}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.04665, y: -0.2800002, z: 44.7735}
+  m_LocalPosition: {x: 27.04665, y: -0.25, z: 44.7735}
   m_LocalScale: {x: 13.814269, y: 1, z: 16.958536}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4579,7 +4579,7 @@ MonoBehaviour:
   - fishPrefab: {fileID: -3063681814957128454, guid: d327fdf4c89185246ba6e625904fd7e9, type: 3}
     catchChance: 33
     HP: 50
-    sellPrice: 5
+    sellPrice: 25
   fishSpawnPoint: {fileID: 58364278}
   floatSpeed: 2
   destroyAfterSeconds: 3
@@ -5880,7 +5880,7 @@ Transform:
   m_GameObject: {fileID: 737773061}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.04665, y: -0.48000002, z: 44.7735}
+  m_LocalPosition: {x: 27.04665, y: -0.28, z: 44.7735}
   m_LocalScale: {x: 13.814269, y: 1, z: 16.958536}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8347,7 +8347,7 @@ MonoBehaviour:
     catchChance: 33
     HP: 50
     sellPrice: 25
-  fishSpawnPoint: {fileID: 1075063706}
+  fishSpawnPoint: {fileID: 58364278}
   floatSpeed: 2
   destroyAfterSeconds: 3
   playerMovement2: {fileID: 1765059784}
@@ -10508,7 +10508,7 @@ Transform:
   m_GameObject: {fileID: 1405737168}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.38665, y: -0.84000015, z: 8.4014}
+  m_LocalPosition: {x: 9.38665, y: -0.53, z: 8.4014}
   m_LocalScale: {x: 110.112854, y: 1, z: 108.41382}
   m_ConstrainProportionsScale: 0
   m_Children: []
