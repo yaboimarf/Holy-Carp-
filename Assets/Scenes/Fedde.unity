@@ -330,6 +330,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46960035}
   m_CullTransparentMesh: 1
+--- !u!1 &58364277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58364278}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58364278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58364277}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.95761245, z: -0, w: 0.2880598}
+  m_LocalPosition: {x: 132.539, y: 37.321, z: 75.283}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1637126667}
+  m_LocalEulerAnglesHint: {x: 0, y: -146.516, z: 0}
 --- !u!4 &70858890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4081901268427122003, guid: 3783f19a0a7942c44bf28040b17a145a, type: 3}
@@ -1345,6 +1376,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71502e22ec26784d9eb45b33c2fcd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingArea
+  currentfish:
+    fishPrefab: {fileID: 0}
+    catchChance: 25
+    HP: 0
+    sellPrice: 0
   waitTime: 5
   fishList:
   - fishPrefab: {fileID: 7593636604423695899, guid: c4c89eb2b4d4ba64b9f2b0132fa2e291, type: 3}
@@ -1371,6 +1407,7 @@ MonoBehaviour:
   CatchButton: {fileID: 5071858567291566540}
   HealButton: {fileID: 251438797}
   HeavyAttackButton: {fileID: 1386380002}
+  FishSpawned: 0
 --- !u!65 &254350977
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4262,6 +4299,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71502e22ec26784d9eb45b33c2fcd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingArea
+  currentfish:
+    fishPrefab: {fileID: 0}
+    catchChance: 25
+    HP: 0
+    sellPrice: 0
   waitTime: 5
   fishList:
   - fishPrefab: {fileID: -357187806234032936, guid: 598f3b54b98831048a2d9882445b70ca, type: 3}
@@ -4276,7 +4318,7 @@ MonoBehaviour:
     catchChance: 33
     HP: 50
     sellPrice: 5
-  fishSpawnPoint: {fileID: 695384187}
+  fishSpawnPoint: {fileID: 58364278}
   floatSpeed: 2
   destroyAfterSeconds: 3
   playerMovement2: {fileID: 1765059784}
@@ -4288,6 +4330,7 @@ MonoBehaviour:
   CatchButton: {fileID: 5071858567291566540}
   HealButton: {fileID: 251438797}
   HeavyAttackButton: {fileID: 1386380002}
+  FishSpawned: 0
 --- !u!65 &695384184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7331,6 +7374,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71502e22ec26784d9eb45b33c2fcd99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishingArea
+  currentfish:
+    fishPrefab: {fileID: 0}
+    catchChance: 25
+    HP: 0
+    sellPrice: 0
   waitTime: 5
   fishList:
   - fishPrefab: {fileID: -8928734975258107902, guid: 932ad641aeb384746979b761c39e42a5, type: 3}
@@ -7357,6 +7405,7 @@ MonoBehaviour:
   CatchButton: {fileID: 5071858567291566540}
   HealButton: {fileID: 251438797}
   HeavyAttackButton: {fileID: 1386380002}
+  FishSpawned: 0
 --- !u!65 &1075063709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10780,6 +10829,7 @@ Transform:
   - {fileID: 339687406}
   - {fileID: 1933595333}
   - {fileID: 1497929799}
+  - {fileID: 58364278}
   - {fileID: 1743938240}
   - {fileID: 1563790971}
   - {fileID: 393783398}

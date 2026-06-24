@@ -17,7 +17,7 @@ public class FishEntry
 
 public class FishingArea : MonoBehaviour
 {
-    private FishEntry currentfish;
+    public FishEntry currentfish;
 
     [Header("Fishing Settings")]
     public float waitTime = 5f;
@@ -44,6 +44,7 @@ public class FishingArea : MonoBehaviour
     public GameObject HealButton;
     public GameObject HeavyAttackButton;
 
+    public bool FishSpawned; 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bobber"))
@@ -157,8 +158,6 @@ public class FishingArea : MonoBehaviour
 
         InventoryManager.AddFish(currentfish.fishPrefab, currentfish.sellPrice);
 
-        SpawnFish(currentfish.fishPrefab);
-
         RemoveBobber();
 
         battleManager.EndBattle();
@@ -179,32 +178,22 @@ public class FishingArea : MonoBehaviour
         Debug.Log("Bobber verwijderd");
     }
 
-    void SpawnFish(Fish fishPrefab)
+    public void SpawnFish(Fish fishPrefab)
     {
-        if (fishSpawnPoint == null) return;
-
-        GameObject fish = Instantiate(
-            fishPrefab.gameObject,
-            fishSpawnPoint.position,
-            Quaternion.identity
-        );
-
-        StartCoroutine(FloatFish(fish));
-    }
-
-    IEnumerator FloatFish(GameObject fish)
-    {
-        float t = 0f;
-
-        while (t < destroyAfterSeconds)
+        if (!FishSpawned)
         {
-            fish.transform.position += Vector3.up * floatSpeed * Time.deltaTime;
-            t += Time.deltaTime;
-            yield return null;
-        }
+            if (fishSpawnPoint == null) return;
 
-        Destroy(fish);
+            GameObject fish = Instantiate(
+                fishPrefab.gameObject,
+                fishSpawnPoint.position,
+                Quaternion.identity
+            );
+            fish.transform.parent = fishSpawnPoint;
+            FishSpawned = true;
+        }
     }
+
 
     public void AttackButtonFuntion() 
     {

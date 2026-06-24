@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,6 +37,8 @@ public class BattleManager : MonoBehaviour
         InventoryCanvas.SetActive(false);
         playerMovement2.cam.transform.position = battleLocation.transform.position;
         playerMovement2.cam.transform.rotation = battleLocation.transform.rotation;
+
+        FishingArea.SpawnFish(FishingArea.currentfish.fishPrefab);
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -102,5 +105,9 @@ public class BattleManager : MonoBehaviour
 
         playerHealth.ResetHP();
         EnemyAI.ResetHP();
+        FishingArea.FishSpawned = false;
+        Transform child = FishingArea.fishSpawnPoint.transform.GetChild(0);
+        Destroy(child.gameObject);
+
     }
 }
