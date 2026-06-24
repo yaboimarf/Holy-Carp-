@@ -11,6 +11,7 @@ public class BattleManager : MonoBehaviour
     public GameObject battleMenu;
     public GameObject HealthBarCanvas;
     public GameObject InventoryCanvas;
+    public GameObject Canvas;
 
     public FishingArea FishingArea;
     public EnemyAI EnemyAI;
@@ -35,6 +36,7 @@ public class BattleManager : MonoBehaviour
         battleMenu.SetActive(true);
         HealthBarCanvas.SetActive(true);
         InventoryCanvas.SetActive(false);
+        Canvas.SetActive(false);
         playerMovement2.cam.transform.position = battleLocation.transform.position;
         playerMovement2.cam.transform.rotation = battleLocation.transform.rotation;
 
@@ -100,6 +102,7 @@ public class BattleManager : MonoBehaviour
 
         battleMenu.SetActive(false);
         HealthBarCanvas.SetActive(false);
+        Canvas.SetActive(true);
         playerMovement2.cam.transform.position = ogCamLocation.transform.position;
         playerMovement2.cam.transform.rotation = ogCamLocation.transform.rotation;
 
@@ -108,6 +111,9 @@ public class BattleManager : MonoBehaviour
         FishingArea.FishSpawned = false;
         Transform child = FishingArea.fishSpawnPoint.transform.GetChild(0);
         Destroy(child.gameObject);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
     }
 }
