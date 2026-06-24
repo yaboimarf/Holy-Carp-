@@ -14,6 +14,9 @@ public class BattleManager : MonoBehaviour
     public FishingArea FishingArea;
     public EnemyAI EnemyAI;
     public PlayerHealth playerHealth;
+    public PlayerMovement2 playerMovement2;
+    public GameObject battleLocation;
+    public GameObject ogCamLocation;
 
     private void Update()
     {
@@ -31,6 +34,8 @@ public class BattleManager : MonoBehaviour
         battleMenu.SetActive(true);
         HealthBarCanvas.SetActive(true);
         InventoryCanvas.SetActive(false);
+        playerMovement2.cam.transform.position = battleLocation.transform.position;
+        playerMovement2.cam.transform.rotation = battleLocation.transform.rotation;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -92,6 +97,8 @@ public class BattleManager : MonoBehaviour
 
         battleMenu.SetActive(false);
         HealthBarCanvas.SetActive(false);
+        playerMovement2.cam.transform.position = ogCamLocation.transform.position;
+        playerMovement2.cam.transform.rotation = ogCamLocation.transform.rotation;
 
         playerHealth.ResetHP();
         EnemyAI.ResetHP();
