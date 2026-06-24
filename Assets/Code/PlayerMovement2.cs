@@ -37,6 +37,7 @@ public class PlayerMovement2 : MonoBehaviour
     public bool isCodexOpen = false;
     public GameObject ShopCanvas;
     public bool isShopCanvasOpen = false;
+    public GameObject dobberSpawnpoint;
     void Start()
     {
         // Initialize cameraPitch from current local rotation and normalize to -180..180 range
@@ -84,7 +85,7 @@ public class PlayerMovement2 : MonoBehaviour
             if (baitThrown == false)
             {
                 baitPrefab.transform.forward = transform.forward; // align bait's forward with player's forward
-                Instantiate(baitPrefab, cam.position + cam.forward, cam.rotation); // spawn bait slightly in front of player
+                Instantiate(baitPrefab, dobberSpawnpoint.transform.position, dobberSpawnpoint.transform.rotation); // spawn bait slightly in front of player
                 baitThrown = true;
             }
             else
