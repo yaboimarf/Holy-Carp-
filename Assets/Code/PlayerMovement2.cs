@@ -183,12 +183,16 @@ public class PlayerMovement2 : MonoBehaviour
                 codexPanel.SetActive(true);
                 canControl = false; // disable controls when codex is active
                 isCodexOpen = true;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
             else
             {
                 codexPanel.SetActive(false);
                 canControl = true; // re-enable controls when codex is closed
                 isCodexOpen = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
 
         }

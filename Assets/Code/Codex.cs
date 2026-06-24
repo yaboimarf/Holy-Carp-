@@ -49,7 +49,7 @@ public class Codex : MonoBehaviour
             if (flounder == true)
             {
                 flounderCanvas.SetActive(true);
-            }
+            }            
         }
         if(codexCount == 1)
         {
