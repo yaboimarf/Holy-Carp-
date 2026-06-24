@@ -166,11 +166,14 @@ public class PlayerMovement2 : MonoBehaviour
                 menu.SetActive(true);
                 canControl = false; // disable controls when menu is active
                 isMenuOpen = true;
+                
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
             else
             {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 menu.SetActive(false);
                 canControl = true; // re-enable controls when menu is closed
                 isMenuOpen = false;

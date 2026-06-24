@@ -4947,7 +4947,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 710233250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1194233262}
+        m_TargetAssemblyTypeName: Money, Assembly-CSharp
+        m_MethodName: Wins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &710233250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6533,9 +6545,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 695384182}
     - target: {fileID: 7986990056053365984, guid: cd3ff95e817d1a842af1ae6989ab8b3e, type: 3}
+      propertyPath: MenuCanvas
+      value: 
+      objectReference: {fileID: 1796774704305048586}
+    - target: {fileID: 7986990056053365984, guid: cd3ff95e817d1a842af1ae6989ab8b3e, type: 3}
       propertyPath: battleMenu
       value: 
       objectReference: {fileID: 7007706346768018443}
+    - target: {fileID: 7986990056053365984, guid: cd3ff95e817d1a842af1ae6989ab8b3e, type: 3}
+      propertyPath: CodexCanvas
+      value: 
+      objectReference: {fileID: 132037130}
     - target: {fileID: 7986990056053365984, guid: cd3ff95e817d1a842af1ae6989ab8b3e, type: 3}
       propertyPath: FishingArea
       value: 
@@ -9429,7 +9449,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Money
   money: 0
+  prijs: 10
   moneyText: {fileID: 1284906123}
+  winScreen: {fileID: 902536645}
+  ShopCanvas: {fileID: 619118057}
+  playerMovement: {fileID: 1765059784}
 --- !u!4 &1194233263
 Transform:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class BattleManager : MonoBehaviour
     public GameObject HealthBarCanvas;
     public GameObject InventoryCanvas;
     public GameObject Canvas;
+    public GameObject MenuCanvas;
+    public GameObject CodexCanvas;
 
     public FishingArea FishingArea;
     public EnemyAI EnemyAI;
@@ -37,6 +39,8 @@ public class BattleManager : MonoBehaviour
         HealthBarCanvas.SetActive(true);
         InventoryCanvas.SetActive(false);
         Canvas.SetActive(false);
+        MenuCanvas.SetActive(false);
+        CodexCanvas.SetActive(false);
         playerMovement2.cam.transform.position = battleLocation.transform.position;
         playerMovement2.cam.transform.rotation = battleLocation.transform.rotation;
 
