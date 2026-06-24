@@ -190,6 +190,9 @@ public class FishingArea : MonoBehaviour
                 Quaternion.identity
             );
             fish.transform.parent = fishSpawnPoint;
+            fish.transform.rotation = fishSpawnPoint.rotation;
+            fish.transform.localScale = fishSpawnPoint.localScale;
+            fish.GetComponent<Animator>().enabled = false;
             FishSpawned = true;
         }
     }
