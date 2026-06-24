@@ -87,4 +87,16 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void TakeHeavyDamage(int Heavydamage)
+    {
+        currentHP -= Heavydamage;
+
+        healthBar.SetHP(currentHP);
+
+
+        if (currentHP <= 0)
+        {
+            fishingArea.CatchFish();
+        }
+    }
 }

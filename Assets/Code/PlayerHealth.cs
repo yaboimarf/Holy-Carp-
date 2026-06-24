@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHP;
 
     public int attackDamage = 25;
+    public int HeavyAttackDamage = 50;
 
     public HealthBar healthBar;
     public BattleManager battleManager;
@@ -57,5 +59,16 @@ public class PlayerHealth : MonoBehaviour
         {
             battleManager.PlayerTurnCompleted();
         }
+    }
+
+    public void Flee(EnemyAI enemy)
+    {
+        battleManager.EndBattle();
+    }
+
+    public void HeavyAttack(EnemyAI enemy)
+    { 
+        enemy.TakeHeavyDamage(HeavyAttackDamage);
+        battleManager.PlayerTurnCompleted();
     }
 }

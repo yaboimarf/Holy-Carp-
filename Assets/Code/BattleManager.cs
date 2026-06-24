@@ -10,6 +10,7 @@ public class BattleManager : MonoBehaviour
     public GameObject battleMenu;
     public GameObject HealthBarCanvas;
     public GameObject InventoryCanvas;
+    public GameObject respawnPoint;
 
     public FishingArea FishingArea;
     public EnemyAI EnemyAI;

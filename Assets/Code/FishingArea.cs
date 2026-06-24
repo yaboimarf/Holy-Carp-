@@ -41,6 +41,8 @@ public class FishingArea : MonoBehaviour
     public InventoryManager InventoryManager;
     public GameObject AttackButton;
     public GameObject CatchButton;
+    public GameObject FleeButton;
+    public GameObject HeavyAttackButton;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -101,6 +103,12 @@ public class FishingArea : MonoBehaviour
 
             CatchButton.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
             CatchButton.gameObject.GetComponent<Button>().onClick.AddListener(CatchButtonFuntion);
+
+            FleeButton.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+            FleeButton.gameObject.GetComponent<Button>().onClick.AddListener(FleeButtonFuntion);
+
+            HeavyAttackButton.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+            HeavyAttackButton.gameObject.GetComponent<Button>().onClick.AddListener(HeavyAttackButtonFuntion);
 
             battleManager.isBattleActive = true;
             playerMovement2.canControl = false;
@@ -205,5 +213,13 @@ public class FishingArea : MonoBehaviour
     public void CatchButtonFuntion()
     {
         playerHealth.TryCatchFish(enemyAI);
+    }
+    public void FleeButtonFuntion()
+    {
+        playerHealth.Flee(enemyAI);
+    }
+    public void HeavyAttackButtonFuntion()
+    { 
+        playerHealth.HeavyAttack(enemyAI);
     }
 }
