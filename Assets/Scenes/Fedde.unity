@@ -1201,6 +1201,8 @@ MonoBehaviour:
   InventoryManager: {fileID: 790265832}
   AttackButton: {fileID: 629038571425056697}
   CatchButton: {fileID: 5071858567291566540}
+  FleeButton: {fileID: 0}
+  HeavyAttackButton: {fileID: 0}
 --- !u!65 &254350977
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2142,7 +2144,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: While carp are prized quarries and are valued as both food and ornamental
+    fish, they are considered trash fish and invasive pests in many parts of Africa,
+    Australia and most of the United States.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3774,7 +3778,7 @@ MonoBehaviour:
   waitTime: 5
   fishList:
   - fishPrefab: {fileID: -357187806234032936, guid: 598f3b54b98831048a2d9882445b70ca, type: 3}
-    catchChance: 100
+    catchChance: 33
     HP: 100
     sellPrice: 100
   - fishPrefab: {fileID: 6153886657398709122, guid: 0c48bb1f97412a6408d4ab0f4b74ee92, type: 3}
@@ -3795,6 +3799,8 @@ MonoBehaviour:
   InventoryManager: {fileID: 790265832}
   AttackButton: {fileID: 629038571425056697}
   CatchButton: {fileID: 5071858567291566540}
+  FleeButton: {fileID: 0}
+  HeavyAttackButton: {fileID: 0}
 --- !u!65 &695384184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4123,6 +4129,10 @@ PrefabInstance:
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 647838529284085538, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_text
+      value: Tuna
+      objectReference: {fileID: 0}
+    - target: {fileID: 647838529284085538, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -4134,6 +4144,18 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 647838529284085538, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 647838529284085538, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 758145256604107635, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_text
+      value: Pike
+      objectReference: {fileID: 0}
     - target: {fileID: 758145256604107635, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -4145,6 +4167,14 @@ PrefabInstance:
     - target: {fileID: 758145256604107635, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 758145256604107635, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 758145256604107635, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 918055285406467467, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4191,6 +4221,10 @@ PrefabInstance:
       value: Left
       objectReference: {fileID: 0}
     - target: {fileID: 2460456052631882240, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_text
+      value: Carp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460456052631882240, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -4201,6 +4235,14 @@ PrefabInstance:
     - target: {fileID: 2460456052631882240, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460456052631882240, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460456052631882240, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2823966111489872098, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4215,6 +4257,10 @@ PrefabInstance:
       value: -480
       objectReference: {fileID: 0}
     - target: {fileID: 3226959202784133251, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_text
+      value: Remora
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226959202784133251, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -4225,6 +4271,14 @@ PrefabInstance:
     - target: {fileID: 3226959202784133251, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226959202784133251, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 3226959202784133251, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3378203374076010635, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4247,6 +4301,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3945335450275712027, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_text
+      value: Olm
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945335450275712027, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -4257,6 +4315,14 @@ PrefabInstance:
     - target: {fileID: 3945335450275712027, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945335450275712027, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 3945335450275712027, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3953034662965250437, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4285,6 +4351,14 @@ PrefabInstance:
     - target: {fileID: 4151469168348688847, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151469168348688847, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151469168348688847, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4213245849317675931, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_IsActive
@@ -4431,6 +4505,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7736161314735875317, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_text
+      value: Goldfish
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736161314735875317, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -4441,6 +4519,14 @@ PrefabInstance:
     - target: {fileID: 7736161314735875317, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736161314735875317, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736161314735875317, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8277344610443097044, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_Type
@@ -4467,6 +4553,10 @@ PrefabInstance:
       value: UpdateCodexCountNegative
       objectReference: {fileID: 0}
     - target: {fileID: 8952878278150754509, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_text
+      value: Beardfish
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952878278150754509, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -4477,6 +4567,14 @@ PrefabInstance:
     - target: {fileID: 8952878278150754509, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_fontColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952878278150754509, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952878278150754509, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9068830209620996224, guid: fdd30f7559b144649a08470f2d4da0e2, type: 3}
       propertyPath: m_IsActive
@@ -5746,7 +5844,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: It is commonly kept as a pet in indoor aquariums, and is one of the most
+    popular aquarium fish. Goldfish released into the wild have become an invasive
+    pest in parts of North America and Australia.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6725,6 +6825,8 @@ MonoBehaviour:
   InventoryManager: {fileID: 790265832}
   AttackButton: {fileID: 629038571425056697}
   CatchButton: {fileID: 5071858567291566540}
+  FleeButton: {fileID: 0}
+  HeavyAttackButton: {fileID: 0}
 --- !u!65 &1075063709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7382,7 +7484,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Catfish are named for their prominent barbels, which resemble a cat's whiskers,
+    though not all catfish have prominent barbels.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8600,7 +8703,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Tuna, opah, and mackerel sharks are the only species of fish that can maintain
+    a body temperature higher than that of the surrounding water.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9137,7 +9241,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Flounders are a group of flatfish species. They are demersal fish, found
+    at the bottom of oceans around the world.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9274,7 +9379,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "Pike can grow to a relatively large size. Their average length is about
+    40\u201355 cm, with maximum recorded lengths of up to 150 cm and maximum weights
+    of 28.4 kg."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9473,7 +9580,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Their distinctive first dorsal fins take the form of a modified oval, sucker-like
+    organ with slat-like structures that open and close to create suction and take
+    a firm hold against the skin of larger marine animals.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10308,7 +10417,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: They are bottom-dwelling fish, found down to about 800 m depth. Most are
+    relatively small fish, although one species, Polymixia berndti, is over 40 cm
+    in length
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10595,7 +10706,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: In contrast to most amphibians, it is entirely aquatic; eating, sleeping,
+    and breeding underwater. Living in caves found in the Dinaric Alps.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
