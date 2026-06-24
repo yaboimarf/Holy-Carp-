@@ -29,6 +29,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     public InventoryUI inventoryUI;
     public BattleManager battleManager;
+    public AudioManager audioManager;
 
     [Header("Other")]
     public GameObject menu;
@@ -124,7 +125,14 @@ public class PlayerMovement2 : MonoBehaviour
         moveDir.z = Input.GetAxis("Vertical");
         //moveDir.y = gravity; // ensure no vertical movement from input
         rb.AddRelativeForce(moveSpeed * Time.deltaTime * moveDir, ForceMode.Impulse);
-
+        if(moveDir.x != 0)
+        {
+            audioManager.sandWalking.GetComponent<AudioSource>().loop = true;
+        }
+        if(moveDir.z != 0)
+        {
+            audioManager.sandWalking.GetComponent<AudioSource>().loop = true;
+        }
         // mouse input
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");

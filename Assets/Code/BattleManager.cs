@@ -14,6 +14,7 @@ public class BattleManager : MonoBehaviour
     public GameObject Canvas;
     public GameObject MenuCanvas;
     public GameObject CodexCanvas;
+    public GameObject MusicSource;
 
     public FishingArea FishingArea;
     public EnemyAI EnemyAI;
@@ -43,6 +44,8 @@ public class BattleManager : MonoBehaviour
         CodexCanvas.SetActive(false);
         playerMovement2.cam.transform.position = battleLocation.transform.position;
         playerMovement2.cam.transform.rotation = battleLocation.transform.rotation;
+        battleLocation.GetComponent<AudioSource>().enabled = true;
+        MusicSource.GetComponent<AudioSource>().enabled = false;
 
         FishingArea.SpawnFish(FishingArea.currentfish.fishPrefab);
 
@@ -115,6 +118,9 @@ public class BattleManager : MonoBehaviour
         FishingArea.FishSpawned = false;
         Transform child = FishingArea.fishSpawnPoint.transform.GetChild(0);
         Destroy(child.gameObject);
+
+        battleLocation.GetComponent<AudioSource>().enabled = false;
+        MusicSource.GetComponent<AudioSource>().enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

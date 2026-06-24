@@ -44,7 +44,19 @@ public class FishingArea : MonoBehaviour
     public GameObject HealButton;
     public GameObject HeavyAttackButton;
 
-    public bool FishSpawned; 
+    public AudioManager audioManager;
+    public bool SoundIsPlaying;
+    public GameObject splashAudio;
+
+    public bool FishSpawned;
+    private void Update()
+    {
+        if(SoundIsPlaying == true)
+        {
+            audioManager.sandWalking.GetComponent<AudioSource>().Play();
+            return;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bobber"))
@@ -57,6 +69,8 @@ public class FishingArea : MonoBehaviour
             }
 
             Debug.Log("Dobber in water...");
+            
+            splashAudio.GetComponent<AudioSource>().enabled = true;
         }
     }
 
@@ -67,6 +81,7 @@ public class FishingArea : MonoBehaviour
             currentBobber = null;
 
             Debug.Log("Dobber uit water");
+            splashAudio.GetComponent<AudioSource>().enabled = false;
         }
     }
 
@@ -81,6 +96,7 @@ public class FishingArea : MonoBehaviour
             if (currentBobber == null)
             {
                 fishingCoroutine = null;
+                splashAudio.GetComponent<AudioSource>().enabled = false;
                 yield break;
             }
 
