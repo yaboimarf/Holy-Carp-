@@ -757,7 +757,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The ocean\nHealth: \nWorth:\n"
+  m_text: 'Location: The ocean
+
+    Health: 50
+
+    Worth: 25
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1431,16 +1437,16 @@ MonoBehaviour:
   waitTime: 5
   fishList:
   - fishPrefab: {fileID: 7593636604423695899, guid: c4c89eb2b4d4ba64b9f2b0132fa2e291, type: 3}
-    catchChance: 33
-    HP: 100
+    catchChance: 20
+    HP: 125
     sellPrice: 100
   - fishPrefab: {fileID: -6172765839617545978, guid: f4671b2adf987444ea41ed60559d957b, type: 3}
-    catchChance: 33
+    catchChance: 30
     HP: 100
     sellPrice: 50
   - fishPrefab: {fileID: -3882890478070048919, guid: 0fd8c48e11bcef9439304234976a2531, type: 3}
-    catchChance: 33
-    HP: 50
+    catchChance: 50
+    HP: 75
     sellPrice: 25
   fishSpawnPoint: {fileID: 58364278}
   floatSpeed: 2
@@ -4569,17 +4575,17 @@ MonoBehaviour:
   waitTime: 5
   fishList:
   - fishPrefab: {fileID: -357187806234032936, guid: 598f3b54b98831048a2d9882445b70ca, type: 3}
-    catchChance: 33
-    HP: 100
-    sellPrice: 100
+    catchChance: 50
+    HP: 50
+    sellPrice: 25
   - fishPrefab: {fileID: 6153886657398709122, guid: 0c48bb1f97412a6408d4ab0f4b74ee92, type: 3}
-    catchChance: 33
+    catchChance: 30
     HP: 100
     sellPrice: 50
   - fishPrefab: {fileID: -3063681814957128454, guid: d327fdf4c89185246ba6e625904fd7e9, type: 3}
-    catchChance: 33
-    HP: 50
-    sellPrice: 25
+    catchChance: 20
+    HP: 200
+    sellPrice: 150
   fishSpawnPoint: {fileID: 58364278}
   floatSpeed: 2
   destroyAfterSeconds: 3
@@ -6761,7 +6767,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The ocean\nHealth: \nWorth:\n"
+  m_text: 'Location: The ocean
+
+    Health: 100
+
+    Worth: 50
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6983,7 +6995,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The Cave\nHealth: \nWorth:\n"
+  m_text: 'Location: The Cave
+
+    Health: 150
+
+    Worth: 75
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7994,7 +8012,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The Cave\nHealth: \nWorth:\n"
+  m_text: 'Location: The Cave
+
+    Health: 30
+
+    Worth: 10
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8356,15 +8380,15 @@ MonoBehaviour:
   waitTime: 5
   fishList:
   - fishPrefab: {fileID: -8928734975258107902, guid: 932ad641aeb384746979b761c39e42a5, type: 3}
-    catchChance: 33
-    HP: 100
-    sellPrice: 100
+    catchChance: 50
+    HP: 30
+    sellPrice: 10
   - fishPrefab: {fileID: -8142441823760102977, guid: 33e3e33d90baa31488580d5219051f8b, type: 3}
-    catchChance: 33
-    HP: 100
-    sellPrice: 50
+    catchChance: 20
+    HP: 150
+    sellPrice: 75
   - fishPrefab: {fileID: -9120401358201067224, guid: c3c492084736ccc489bedd25617654b4, type: 3}
-    catchChance: 33
+    catchChance: 30
     HP: 50
     sellPrice: 25
   fishSpawnPoint: {fileID: 58364278}
@@ -9051,7 +9075,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The Cave\nHealth: \nWorth:\n"
+  m_text: 'Location: The Cave
+
+    Health: 50
+
+    Worth: 25
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9526,7 +9556,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The Lake\nHealth: \nWorth:\n"
+  m_text: 'Location: The Lake
+
+    Health: 100
+
+    Worth: 50
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13246,7 +13282,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The Lake\nHealth: \nWorth:\n"
+  m_text: 'Location: The Lake
+
+    Health: 75
+
+    Worth: 25
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13492,7 +13534,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The ocean\nHealth: \nWorth:\n"
+  m_text: 'Location: The ocean
+
+    Health: 200
+
+    Worth: 150
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13719,7 +13767,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4081901268427122003, guid: 3783f19a0a7942c44bf28040b17a145a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2146104444}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3783f19a0a7942c44bf28040b17a145a, type: 3}
 --- !u!4 &1865495094 stripped
@@ -14404,7 +14455,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Location: The Lake\nHealth: \nWorth:\n"
+  m_text: 'Location: The Lake
+
+    Health: 125
+
+    Worth: 100
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14860,6 +14917,80 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6777671978335567526, guid: da3b3decba9131242bf4562117b17243, type: 3}
   m_PrefabInstance: {fileID: 1696949452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2146104443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1865495094}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.294
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.832
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.079
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6056665
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3649221
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6056665
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.36492196
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 62.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+      propertyPath: m_Name
+      value: fishingrod
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+--- !u!4 &2146104444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d4844c3e4b7fb344484b6a0c63de937a, type: 3}
+  m_PrefabInstance: {fileID: 2146104443}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &629038571425056697 stripped
 GameObject:
