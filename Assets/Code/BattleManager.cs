@@ -10,7 +10,6 @@ public class BattleManager : MonoBehaviour
     public GameObject battleMenu;
     public GameObject HealthBarCanvas;
     public GameObject InventoryCanvas;
-    public GameObject respawnPoint;
 
     public FishingArea FishingArea;
     public EnemyAI EnemyAI;
@@ -46,8 +45,17 @@ public class BattleManager : MonoBehaviour
 
             if (enemyTurnDone)
             {
-                playerTurnDone = false;
-                enemyTurnDone = false;
+                if (playerHealth.TurnCooldown)
+                {
+                    playerHealth.TurnCooldown = false;
+                    enemyTurnDone = false;
+                    EnemyAI.EnemyTurn(playerHealth);
+                }
+                else
+                {
+                    playerTurnDone = false;
+                    enemyTurnDone = false;
+                }
             }
         }
     }
@@ -55,17 +63,19 @@ public class BattleManager : MonoBehaviour
     public void PlayerTurnCompleted()
     {
         if (!isBattleActive)
-            return;
-
+            return;        
+           
         playerTurnDone = true;
-
-        EnemyAI.EnemyTurn(playerHealth);
+            EnemyAI.EnemyTurn(playerHealth);      
+   
     }
 
     public void EnemyTurnCompleted()
     {
         if (!isBattleActive)
             return;
+
+
 
         if (playerTurnDone)
         {

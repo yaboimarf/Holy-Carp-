@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
     public HealthBar healthBar;
     public BattleManager battleManager;
 
+    public bool TurnCooldown;
+
     void Start()
     {
         currentHP = maxHP;
@@ -61,14 +63,21 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void Flee(EnemyAI enemy)
+    public void Heal(EnemyAI enemy)
     {
-        battleManager.EndBattle();
-    }
+        currentHP += 50; 
 
+        if (currentHP > maxHP)
+            currentHP = maxHP;
+
+        healthBar.SetHP(currentHP);
+        battleManager.PlayerTurnCompleted();
+    }
+    
     public void HeavyAttack(EnemyAI enemy)
     { 
         enemy.TakeHeavyDamage(HeavyAttackDamage);
+        TurnCooldown = true;
         battleManager.PlayerTurnCompleted();
     }
 }
